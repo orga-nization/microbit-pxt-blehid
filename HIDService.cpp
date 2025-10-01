@@ -368,7 +368,7 @@ void HIDService::advertiseHID() {
         m_advdata.name_type = BLE_ADVDATA_FULL_NAME;
         
         // Appearance isn't strictly needed for detection 
-        sd_ble_gap_appearance_set(BLE_APPEARANCE_GENERIC_HID );
+        sd_ble_gap_appearance_set(BLE_APPEARANCE_GENERIC_MEDIA_PLAYER );
 
         // The flags below ensure "pairing mode" so it shows up in Android
         m_advdata.flags = BLE_GAP_ADV_FLAG_BR_EDR_NOT_SUPPORTED | BLE_GAP_ADV_FLAG_LE_GENERAL_DISC_MODE;
